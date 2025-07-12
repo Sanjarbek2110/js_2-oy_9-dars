@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script>
+    // Dark mode class strategy
+    tailwind.config = {
+      darkMode: 'class',
+    };
+  </script>
+</head>
+<body class="transition-colors duration-300 bg-white text-black dark:bg-gray-900 dark:text-white pt-10">
+
+
+  <form action="" id="form" class="max-w-7xl mx-auto gap-5 flex items-center justify-between mb-[30px]">
+    <input type="text" id="input" placeholder="Search users" class="input input-success w-full bg-gray-800 max-w-[90%] dark:bg-white dark:text-black rounded-[12px] py-1 px-4 text-[18px] dark:text-black text-white dark:text-white transition-colors duration-300"/>
+    <select class="select select-neutral" name="" id="">
+      <option value="Balanddan">Balanddan</option>
+      <option value="Pastdan">Pastdan</option>
+    </select>
+    <button id="toggleBtn" type="button" onclick="toggleTheme()" class="px-4 cursor-pointer py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors duration-300 w-full max-w-[9%]">
+      Dark mode
+    </button>
+  </form>
+
+  <ul id="wrapper" class="mb-5 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+    <!-- User cards will be dynamically inserted here -->
+    
+  </ul>
+
+  <script src="./main.js"></script>
+</body>
+</html>
